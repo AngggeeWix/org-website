@@ -1,0 +1,167 @@
+<html>
+	<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+		<title>ACSS Events</title>
+		<style>
+			body {
+			background-image: url("Images/splashbg.png");
+			background-size: cover;
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			margin: 0;
+			}
+			ul {
+			  list-style-type: none;
+			  margin: 0;
+			  padding: 0;
+			  overflow: hidden;
+			  background-color: #333237;
+			  font-family: 'Raleway', sans-serif;
+			  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+			}
+			li {
+			  float: left;
+			  border-right: 1px solid #e7f5e8;
+			}
+			li a {
+			  display: inline-block;
+			  color: #e7f5e8;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			}
+			li a:hover {
+			  color: #333237;
+			  background-color: #e7f5e8;
+			  transition: .2s ease;
+			}
+			.parent{
+				margin: 0 auto;
+				max-width: 1400px;
+				display: grid;
+				grid-gap: 5px;
+				grid-template-columns: repeat(12, 1fr);
+				grid-auto-rows: minmax(50px, auto);
+				padding: 25px;
+			}
+			.parent>div{
+				background-color: #333237;
+			  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+			}
+			.header{
+				grid-column: 1/13;
+				grid-row: 1/3;
+			}
+			.news1 {
+				grid-column: 1/5;
+				grid-row: 1/11;
+				
+			}
+			.news2 {
+				grid-column: 5/9;
+				grid-row: 1/11;
+			}
+			.news3 {
+				grid-column: 9/13;
+				grid-row: 1/11;
+				}
+			.news1:hover, .news2:hover, .news3:hover{
+				box-shadow: 0px 0px 16px 0px rgba(34, 155, 39, 1);
+				transition: 0.3s ease;
+			}
+			.title{
+				text-align:center;
+				font-family: 'Raleway', sans-serif;
+				color:#229B27;
+				font-size:30px;
+				font-weight:bold;
+				margin-bottom:20px;
+			}
+			
+			.desc{
+				text-align:center;
+				color:#E7F5E8;
+				font-family: 'Raleway', sans-serif;
+				font-size:15px;
+			}
+			
+			.img{
+				width:300px;
+				height:300px;
+				margin-left:65px;
+				margin-top:60px;
+				margin-bottom:10px;
+				}
+			.zoom:hover {
+			transform: scale(1.1); 
+			transition: transform 0.5s;
+			}
+			::-webkit-scrollbar {
+			  width: 12px;
+			}
+
+			::-webkit-scrollbar-track {
+			  background: #18191E;
+			}
+
+			::-webkit-scrollbar-thumb {
+			  background: #4EA642;
+			  border-radius: 10px;
+			}
+
+			::-webkit-scrollbar-thumb:hover {
+			  background: #229B27;
+			}
+			
+		</style>
+	</head>
+	
+	<body>
+	<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="whatwedo.html">What We Do</a></li>
+			<li><a href="updates.html">Updates</a></li>
+			<li><a href="members.html">Members</a></li>
+			<li><a href="news.html">News</a></li>
+			<li style="float: right; border-right: none;"><a href="contact.html">Contact Us</a></li>
+		</ul>
+		<div class="parent">
+		
+			<div class="news1">
+			<div class="zoom">
+			<img src="images/digital.png" class="img">
+			<div class="title">	Art AttACCS </div>
+			<div class="desc">
+				To give participants the opportunity to <br>
+				showcase their digital art skills. <br> <br>
+			</div>
+			</div>
+			</div>
+			<div class="news2">
+			<div class="zoom">
+				<img src="images/games.png" class="img">
+			<div class="title">	Game of Games II </div>
+			<div class="desc">
+				To allow the skills and intelligence of the <br>
+				members be put to the test against their peers.
+				
+			</div></div>
+			</div>
+			
+			<div class="news3">
+			<div class="zoom">
+			<img src="images/assembly.png" class="img">
+			<div class="title">	Yearly General Assembly </div>
+			<div class="desc">
+				To wrap up the events done by the organization <br>
+				and allow its members to choose the next officers.
+			</div>
+			</div>
+			</div>
+		</div>
+	</body>
+</html>

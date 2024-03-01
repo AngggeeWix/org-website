@@ -1,0 +1,183 @@
+<html>
+	<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+		<title>Contact Us</title>
+		<style>
+			body {
+			background-image: url("Images/splashbg.png");
+			background-size: cover;
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			margin: 0;
+			}
+			ul {
+			  list-style-type: none;
+			  margin: 0;
+			  padding: 0;
+			  overflow: hidden;
+			  background-color: #333237;
+			  font-family: 'Raleway', sans-serif;
+			  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+			}
+			li {
+			  float: left;
+			  border-right: 1px solid #e7f5e8;
+			}
+			li a {
+			  display: inline-block;
+			  color: #e7f5e8;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			}
+			li a:hover {
+			  color: #333237;
+			  background-color: #e7f5e8;
+			  transition: .2s ease;
+			}
+
+
+			.parent{
+				margin: 0 auto;
+				max-width: 1400px;
+				display: grid;
+				grid-gap: 5px;
+				grid-template-columns: repeat(12, 1fr);
+				grid-auto-rows: minmax(50px, auto);
+				padding: 25px;
+			}
+			.parent>div{
+			  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+			  border-radius: 10px;
+			}
+			.header{
+				grid-column: 1/13;
+				grid-row: 1/7;
+			}
+
+			.news1 {
+				grid-column: 1/5;
+				grid-row: 7/8;
+				
+			}
+			.news2 {
+				grid-column: 5/9;
+				grid-row: 7/8;
+			}
+			.news3 {
+				grid-column: 9/13;
+				grid-row: 7/8;
+				}
+			
+
+
+
+
+			.news1:hover, .news2:hover, .news3:hover{
+				box-shadow: 0px 0px 16px 0px rgba(34, 155, 39, 1);
+				transition: 0.3s ease;
+			}
+			.title{
+				text-align:center;
+				font-family: 'Raleway', sans-serif;
+				color:#229B27;
+				font-size:30px;
+				font-weight:bold;
+				margin-bottom:20px;
+			}
+			
+			.desc{
+				text-align:center;
+				color:#E7F5E8;
+				font-family: 'Raleway', sans-serif;
+				font-size:15px;
+			}
+			
+			.img{
+				width:180px;
+				height:180px;
+				margin-left:130px;
+				margin-top:60px;
+				margin-bottom:10px;
+				}
+			.zoom:hover {
+			transform: scale(1.1); 
+			transition: transform 0.5s;
+			}
+			::-webkit-scrollbar {
+			  width: 12px;
+			}
+
+			::-webkit-scrollbar-track {
+			  background: #18191E;
+			}
+
+			::-webkit-scrollbar-thumb {
+			  background: #4EA642;
+			  border-radius: 10px;
+			}
+
+			::-webkit-scrollbar-thumb:hover {
+			  background: #229B27;
+			}
+			a {
+				text-decoration:none;
+			}
+		</style>
+	</head>
+	
+	<body>
+	<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="whatwedo.html">What We Do</a></li>
+			<li><a href="updates.html">Updates</a></li>
+			<li><a href="members.html">Members</a></li>
+			<li><a href="news.html">News</a></li>
+			<li style="float: right; border-right: none;"><a href="contact.html">Contact Us</a></li>
+		</ul>
+		<div class="parent">						
+			<div class="header"> <img src="images/ead.png"> </div>
+			<div class="news1">
+			<div class="zoom">
+			<img src="images/call.png" class="img">
+			<div class="title">	PHONE </div>
+			<div class="desc">
+				+63 61 128 0116 <br>
+				 <br> <br>
+			</div>
+			</div>
+			</div>
+			<div class="news2">
+			<div class="zoom">
+				<img src="images/Email.png" class="img">
+			<div class="title">	EMAIL </div>
+			<div class="desc">
+				acss.uecal2010@gmail.com <br>
+				
+				
+			</div>
+			</div>
+			</div>
+
+
+			
+			<div class="news3"><a href="https://www.facebook.com/UEACSS">
+			<div class="zoom">
+			<img src="images/facebook.png" class="img">
+			<div class="title">	FACEBOOK </div>
+			<div class="desc">
+				https://www.facebook.com/UEACSS 
+				
+			</div>
+			</div>
+			</a>
+			</div>
+
+			
+		</div>
+	</body>
+</html>

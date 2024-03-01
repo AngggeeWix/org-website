@@ -1,0 +1,170 @@
+<html>
+	<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+		<title>Welcome</title>
+		<style>
+			body {
+				background-image: url("html/Images/splashbg.png");
+				background-size: cover;
+				background-attachment: fixed;
+				background-position: center;
+				background-repeat: no-repeat;
+				margin: 0;
+			}
+			.logo {
+				width: 22%;
+				height: 0%;
+				margin: auto auto;
+			}
+				.container {
+			  position: relative;
+			  width: 300px;
+			}
+
+			.image {
+			  display: block;
+			  width: 300px;
+			  height: auto;
+			}
+
+			.overlay {
+			  position: absolute;
+			  top: 0;
+			  bottom: 0;
+			  left: 0;
+			  right: 0;
+			  height: 100%;
+			  width: 100%;
+			  opacity: 0;
+			  transition: .8s ease;
+			}
+			@keyframes float {
+				0% {
+					transform: translatey(0px);
+				}
+				50% {
+					transform: translatey(-10px);
+				}
+				100% {
+					transform: translatey(0px);
+				}
+			}
+			.logo:hover .overlay {
+			  opacity: 1;
+			  transform: translatey(0px);
+			  animation: float 2s ease-in-out infinite;
+			}
+			.logo:hover .image {
+				transition: .8s ease;
+				opacity: 0%;
+			}
+		
+			ul {
+			  list-style-type: none;
+			  margin: 0;
+			  padding: 0;
+			  overflow: hidden;
+			  background-color: #333237;
+			  font-family: 'Raleway', sans-serif;
+			  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+			}
+			li {
+			  float: left;
+			  border-right: 1px solid #e7f5e8;
+			}
+			li a {
+			  display: inline-block;
+			  color: #e7f5e8;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			}
+			li a:hover {
+			  color: #333237;
+			  background-color: #e7f5e8;
+			  transition: .2s ease;
+			}
+			.button {
+			  display: inline-block;
+			  border-radius: 4px;
+			  background-color: #333237;
+			  border: none;
+			  color: #e7f5e8;
+			  text-align: center;
+			  font-size: 28px;
+			  padding: 20px;
+			  width: 200px;
+			  transition: all 0.5s;
+			  cursor: pointer;
+			  margin: 5px;
+			  font-family: 'Raleway', sans-serif;
+			  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+			}
+			.button span {
+			  cursor: pointer;
+			  display: inline-block;
+			  position: relative;
+			  transition: 0.5s;
+			}
+			.button span:after {
+			  content: '\00bb';
+			  position: absolute;
+			  opacity: 0;
+			  top: 0;
+			  right: -20px;
+			  transition: 0.5s;
+			}
+			.logo:hover span {
+			  padding-right: 25px;
+			  color: #229B27;
+			}
+			.logo:hover span:after {
+			  opacity: 1;
+			  right: 0;
+			  color: #229B27;
+			}
+			.block {
+				position: relative;
+				width: 210px;
+				height: 80px;
+				background-color: #00FFFFFF;
+			}
+			.glow:before, .glow:after {
+				content: '';
+				position: absolute;
+				left: 583px;
+				top: 454px;
+				background-color: #4ea642;
+				width: 200px;
+				height: 73px;
+				z-index: -1;
+				border-radius: 5px;
+			}
+			.glow:hover:after {
+				filter: blur(12px);
+				transition: 0.5s ease;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<ul>
+			<li><a href="html/home.html">Home</a></li>
+			<li><a href="html/about.html">About</a></li>
+			<li><a href="html/whatwedo.html">What We Do</a></li>
+			<li><a href="html/updates.html">Updates</a></li>
+			<li><a href="html/members.html">Members</a></li>
+			<li><a href="html/news.html">News</a></li>
+			<li style="float: right; border-right: none;"><a href="html/contact.html">Contact Us</a></li>
+		</ul>
+		<div class="logo"><center><br><br><br><br><br><div class="container">
+				  <a href="html/home.html"><img src="html/Images/acsslogo.png" alt="Avatar" class="image">
+				  <div class="overlay">
+					<div><img src="html/Images/acsslogoglow.png" align="center" height="auto" width="300px"></div>
+				  </div>
+				</div>
+				<button class="button glow" style="vertical-align:middle"><span>Enter </span></button></a></div>
+	</body>
+</html>

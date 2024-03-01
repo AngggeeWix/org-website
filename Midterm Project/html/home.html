@@ -1,0 +1,307 @@
+<html>
+	<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+		<title>ACSS Hub</title>
+		<style>
+			body {
+			background-image: url("Images/splashbg.png");
+			background-size: cover;
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			margin: 0;
+			}
+			ul {
+			  list-style-type: none;
+			  margin: 0;
+			  padding: 0;
+			  overflow: hidden;
+			  background-color: #333237;
+			  font-family: 'Raleway', sans-serif;
+			  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+			}
+			li {
+			  float: left;
+			  border-right: 1px solid #e7f5e8;
+			}
+			li a {
+			  display: inline-block;
+			  color: #e7f5e8;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			}
+			li a:hover {
+			  color: #333237;
+			  background-color: #e7f5e8;
+			  transition: .2s ease;
+			}
+			.parent{
+				margin: 0 auto;
+				max-width: 1400px;
+				display: grid;
+				grid-gap: 5px;
+				grid-template-columns: repeat(12, 1fr);
+				grid-auto-rows: minmax(50px, auto);
+				padding: 10px;
+			}
+			.cover {
+				width: 1097px;
+				height: 480px;
+				position: relative;
+				top: 5px;
+				left: 5px;
+			}
+			.header{
+				grid-column: 2/12;
+				grid-row: 1/10;
+				background-image: url('Images/greenbg.png');
+			}
+			.header:hover, .about:hover, .wwd:hover, .members:hover, .news:hover, .video:hover, .updates:hover {
+				box-shadow: 0px 0px 16px 0px rgba(34, 155, 39, 1);
+				transition: 0.3s ease;
+			}
+			.about {
+				grid-column: 2/5;
+				grid-row: 10/15;
+				background-color: #18191e;
+			}
+			.wwd {
+				grid-column: 5/9;
+				grid-row: 10/15;
+				background-color: #18191e;
+			}
+			.members {
+				grid-column: 9/12;
+				grid-row: 10/15;
+				background-color: #18191e;
+			}
+			.video {
+				grid-column: 2/8;
+				grid-row: 15/23;
+				background-color: #18191e;
+			}
+			.updates {
+				grid-column: 8/12;
+				grid-row: 15/19;
+				background-color: #18191e;
+			}
+			.news {
+				grid-column: 8/12;
+				grid-row: 19/23;
+				background-color: #18191e;
+			}
+			.footer>a {
+				text-decoration: none;
+				color: #4EA642;
+			}
+			::-webkit-scrollbar {
+			  width: 12px;
+			}
+
+			::-webkit-scrollbar-track {
+			  background: #18191E;
+			}
+
+			::-webkit-scrollbar-thumb {
+			  background: #4EA642;
+			  border-radius: 10px;
+			}
+
+			::-webkit-scrollbar-thumb:hover {
+			  background: #229B27;
+			}
+			.promo {
+				position: relative;
+				left: 5px;
+				top: 1px;
+				width: 654px; 
+				height: auto;
+			}
+			.promotxt {
+				text-align: center;
+				font-family: 'Raleway', sans-serif;
+				font-size: 25px;
+				position: relative;
+				color: #18191E;
+				background-image: url('Images/greenbg.png');
+				padding: 10px;
+				margin: 5px;
+			}
+			.container {
+			  position: relative;
+			  width: 50%;
+			  left: 2px;
+			}
+
+			.image {
+			  display: block;
+			  width: 100%;
+			  height: auto;
+			}
+			.overlay {
+			  position: absolute;
+			  top: 5px;
+			  bottom: 0;
+			  left: 3px;
+			  right: 0;
+			  height: 100%;
+			  width: 320px;
+			  opacity: 0;
+			  transition: .3s ease;
+			  background-color: #333237;
+			}
+			.overlay2 {
+			  position: absolute;
+			  top: 5px;
+			  bottom: 0;
+			  left: 3px;
+			  right: 0;
+			  height: 100%;
+			  width: 432px;
+			  opacity: 0;
+			  transition: .3s ease;
+			  background-color: #333237;
+			}
+			.container:hover .overlay {
+			  opacity: 85%;
+			}
+			.container:hover .overlay2 {
+			  opacity: 85%;
+			}
+			.text {
+			  color: #e7f5e8;
+			  font-size: 25px;
+			  position: absolute;
+			  top: 35%;
+			  left: 50%;
+			  -webkit-transform: translate(-50%, -50%);
+			  -ms-transform: translate(-50%, -50%);
+			  transform: translate(-50%, -50%);
+			  text-align: center;
+			  font-family: 'Raleway', sans-serif;
+			}
+			.text2 {
+			  color: #e7f5e8;
+			  font-size: 25px;
+			  position: absolute;
+			  top: 40%;
+			  left: 50%;
+			  -webkit-transform: translate(-50%, -50%);
+			  -ms-transform: translate(-50%, -50%);
+			  transform: translate(-50%, -50%);
+			  text-align: center;
+			  font-family: 'Raleway', sans-serif;
+			}
+			.img
+				{
+				  position: relative;
+				  top: 5;
+				  left: 2%;
+				}
+			.imgtxt
+				{
+				  position: absolute;
+				  top: 5;
+				  left: 2%;
+				}
+			.overlay1 {
+			  position: absolute;
+			  top: 5px;
+			  left: 10px;
+			  right: 0;
+			  background-color: #333237;
+			  overflow: hidden;
+			  width: 0;
+			  height: 100%;
+			  transition: .5s ease;
+			  opacity: 85%;
+			}
+
+			.container:hover .overlay1 {
+			  width: 192%;
+			}
+
+			.text1 {
+			  color: e7f5e8;
+			  font-size: 25px;
+			  position: absolute;
+			  top: 50%;
+			  left: 47%;
+			  -webkit-transform: translate(-50%, -50%);
+			  -ms-transform: translate(-50%, -50%);
+			  transform: translate(-50%, -50%);
+			  white-space: nowrap;
+			  font-family: 'Raleway', sans-serif;
+			}
+		</style>
+	</head>
+	
+	<body>
+	<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="whatwedo.html">What We Do</a></li>
+			<li><a href="updates.html">Updates</a></li>
+			<li><a href="members.html">Members</a></li>
+			<li><a href="news.html">News</a></li>
+			<li style="float: right; border-right: none;"><a href="contact.html">Contact Us</a></li>
+		</ul>
+		<div class="parent">
+			<div class="header"><a href="https://www.facebook.com/UEACSS/"><img src="Images/cover.png" class="cover"></a></div>
+			<div class="about"><a href="about.html">
+				<div class="container">
+					<img src="Images/aboutusimg.png" class="img" alt="Avatar" class="image">
+						<div class="overlay">
+							<div class="text">Learn About our History, Nature, and Mission.</div>
+						</div>
+					<img src="Images/aboutustxt.png" class="imgtxt">
+				</div></a>
+			</div>
+			<div class="wwd"><a href="wwd.html">
+				<div class="container">
+					<img src="Images/wwdimg.png" class="img" alt="Avatar" class="image">
+						<div class="overlay2">
+							<div class="text">Hear about our Objectives and Goals.</div>
+						</div>
+					<img src="Images/wwdtxt.png" class="imgtxt">
+				</div></a>
+			</div>
+			<div class="members"><a href="members.html">
+				<div class="container">
+					<img src="Images/membersimg.png" class="img" alt="Avatar" class="image">
+						<div class="overlay">
+							<div class="text2">Meet the Officers of ACSS.</div>
+						</div>
+					<img src="Images/memberstxt.png" class="imgtxt">
+				</div></a>
+			</div>
+			<div class="video">
+				<div class="promotxt">Promotional Video</div>
+				<video class="promo" controls>
+				  <source src="Images/accsPromo.mp4" type="video/mp4">
+				</video>
+			</div>
+			<div class="updates"><a href="updates.html">
+				<div class="container">
+					<img src="Images/updatesimg.png" class="img" alt="Avatar" class="image">
+						<div class="overlay1">
+							<div class="text1">Ongoing Activities<br> and Updates on<br> Previous Events.</div>
+						</div>
+					<img src="Images/updatestxt.png" class="imgtxt">
+				</div></a>
+			</div>
+			<div class="news"><a href="news.html">
+				<div class="container">
+					<img src="Images/newsimg.png" class="img" alt="Avatar" class="image">
+						<div class="overlay1">
+							<div class="text1">Upcoming Events<br> the ACSS has<br> Planned for you.</div>
+						</div>
+					<img src="Images/newstxt.png" class="imgtxt">
+				</div>
+			</div></a>
+		</div>
+	</body>
+</html>

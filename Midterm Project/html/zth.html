@@ -1,0 +1,113 @@
+<html>
+	<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+		<title>ACSS Events</title>
+		<style>
+			body {
+			background-image: url('Images/splashbg.png');
+			  background-size: cover;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			}
+			
+			::-webkit-scrollbar {
+			  width: 12px;
+			}
+
+			::-webkit-scrollbar-track {
+			  background: #18191E;
+			}
+
+			::-webkit-scrollbar-thumb {
+			  background: #4EA642;
+			  border-radius: 10px;
+			}
+
+			::-webkit-scrollbar-thumb:hover {
+			  background: #229B27;
+			}
+			.parent{
+				margin: 0 auto;
+				max-width: 1400px;
+				display: grid;
+				grid-gap: 5px;
+				grid-template-columns: repeat(12, 1fr);
+				grid-auto-rows: minmax(50px, auto);
+			}
+			.title {
+				grid-column: 3/11;
+				grid-row: 1/3;
+				font-family: 'Raleway', sans-serif;
+				color: #e7f5e8;
+				font-size: 50px;
+				text-align: center;
+				font-weight: bold;
+				padding: 10px;
+			}
+			.photo {
+				grid-column: 2/12;
+				grid-row: 3/8;
+			}
+			.txt {
+				grid-column: 3/11;
+				grid-row: 8/9;
+				padding: 10px;
+				
+			}
+			img {
+				width: 50%;
+				height: auto;
+				display: block;
+			  margin-left: auto;
+			  margin-right: auto;
+			}
+			p {
+				font-family: 'Raleway', sans-serif;
+				color: #e7f5e8;
+				font-size: 20px;
+				text-align: center;
+			}
+			.back {
+				grid-column: 1/3;
+				padding: 15px;
+			}
+			a {
+			  text-decoration: none;
+			  font-family: 'Raleway', sans-serif;
+			  display: inline-block;
+			  padding: 8px 16px;
+			  color: #e7f5e8;
+			  border-radius: 10px;
+			}
+
+			a:hover {
+			  background-color: #333237;
+			  color: #229B27;
+			  box-shadow: 0px 0px 16px 0px rgba(34, 155, 39, 1);
+			  transition: .3s ease;
+			}
+
+			.previous {
+			  background-color: #333237;
+			  color: #e7f5e8;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div class="parent">
+		<div class="back">
+			<a href="updphone.html" target="_self" class="previous">&laquo; Back</a>
+			</div>
+			<div class="title">Zero to Hero II</div>
+			<div class="photo"><img src="Images/zth2.jpg"></div>
+			<div class="txt">
+				<p>
+					&emsp;As we face a technological advent that is fast approaching, it calls for extensive learning of a technological realm that is quite controversial. curious mind to pique your interests with our third webinar for this academic year. We proudly present to you "Zero to Hero II | Artificial Intelligence." Now on its second edition, this webinar about a timely field of study will surely blow your minds. – March 1, 2021
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
